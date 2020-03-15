@@ -1,47 +1,24 @@
-# Spaced Repetition Capstone
+# Spaced box
 
-## Setup
+Spaced repetition is a learning technique that incorporates increasing intervals of time between subsequent review of previously learned material in order to exploit the psychological spacing effect.
 
-To setup the application
+Users of Spaced box can practice Hungarian using the spaced repetition technique. Words that are guessed incorrectly will be displayed to the user more frequently so they can learn Hungarian more effectively.
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+![View Words](README/learnwords.JPG "View Words")
+![Flashcard](README/flashcard.JPG "Flashcard")
+![Correct!](README/correctresponse.JPG "Correct!")
+![Incorrect](README/incorrectresponse.JPG "Incorrect")
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+## See it live!
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+[Spaced Box App](https://spacedbox.now.sh/)
 
-## Running project
+[Spaced Box Server (GitHub)](https://github.com/WEB818/stephen-wendy-spaced-repetition-api)
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+## Technology Used
 
-## Running the tests
+Front-End: _ReactJS | CSS_
 
-This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
+Back-End: _NodeJS | KnexJS | ExpressJS | PostgreSQL_
 
-Cypress has the following expectations:
-
-- You have cypress installed (this is a devDependency of the project)
-- You have your application running at http://localhost:3000.
-  - You can change the address of this expectation in the `./cypress.json` file.
-- Your `./src/config.js` is using http://localhost:8000/api as the `API_ENDPOINT`
-
-To start the tests run the command:
-
-```bash
-npm run cypress:open
-```
-
-On the first run of this command, the cypress application will verify its install. Any other runs after this, the verification will be skipped.
-
-The command will open up the Cypress application which reads tests from the `./cypress/integration/` directory. You can then run individual tests by clicking on the file names or run all tests by clicking the "run all tests" button in the cypress GUI.
-
-Tests will assert against your running localhost client application.
-
-You can also start all of the tests in the command line only (not using the GUI) by running the command:
-
-```bash
-npm run cypress:run
-```
-
-This will save video recordings of the test runs in the directory `./cypress/videos/`.
+Testing: _Cypress_
